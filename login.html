@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        h1{
+            text-align: center;
+            color: rgb(228, 218, 220);
+            font-weight: bolder;
+        }
+        body{
+          background-image: url("loginback.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          
+        }
+        label{
+            color: aqua;   
+        }
+        .btn .btn-info{
+          padding-right: 70px;
+        }
+        a{
+          margin-right: 100px;
+          margin-left: 30px;
+        }
+       
+    </style>
+    <script>
+        function validateForm() {
+          let x = document.forms["myForm"]["fname"].value;
+          let password=document.forms["myForm"]["password"].value;
+          if (x.length <=3) {
+            alert("Name must be filled out");
+            return false;
+          }
+          else if(password.length<=4){
+            alert("password must be greater then 4 digit");
+            return false;
+          }
+        }
+        </script>
+    
+</head>
+
+<header style="background-color: transparent">
+
+  <div class="header-1">
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <nav class="navbar">
+          
+          <a href="home2.html" class="btn btn-info" role="button" style="border: burlywood; margin-right: 80px;">Home</a>
+          <a href="Product2veg.html" class="btn btn-info" role="button" style="border: burlywood; ">Products</a>
+          <a href="login.html" class="btn btn-info" role="button" style="border:  burlywood;">Login</a>
+          <a href="Registration.html" class="btn btn-info" role="button" style="border: burlywood;">Registration</a>
+          <a href="Cart.html" class="btn btn-info" role="button" style="border: burlywood;">Cart</a>    
+          <a href="contact.html" class="btn btn-info" role="button" style="border: burlywood;">Contact Us</a>
+      </nav>    
+  </div>
+
+</header>
+<body>
+    <h1>Login</h1>
+    
+    <div class="container">
+      <form  class="row g-3" action="./LoginSuccess.html" onsubmit="return validateForm()"name="myForm" method="post">
+      <div class="col-md-4">
+            <label>Enter Username</label>
+           
+            <div class="input-group has-validation">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                <input type="text" class="form-control" name="fname" id="name" placeholder="Enter your Username" required>
+            </div>
+            </div>
+            <br>
+            <br><br>
+            <div class="col-md-4">
+            <label style="margin-top: 20px;">Enter Password</label>
+            <div class="input-group has-validation">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                <input id="password" type="password" class="form-control" name="password" placeholder=" Enter your Password" required>
+            </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="col-12">
+                <button class="btn btn-primary" value="submit" style="margin-top:20px;margin-left: 30px;">Login</button>
+              </div>
+              <div style="color: aliceblue;">
+                <p class="mb-0 pt-3" style="margin-top:20px"><strong>Don't have an account?</strong><a href="Registration.html" class="text-dark-50 fw-bold" ><strong>  Sign Up</strong></a></p>
+              </div>
+   
+
+      </div>
+    </form>
+    </div>
+</body>
+</html>

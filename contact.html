@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+          h1{
+            text-align: center;
+            color: blueviolet;
+          }
+          label{
+            color: rgb(241, 227, 249);
+          }
+          .col-sm-4{
+            color: aliceblue;
+          }
+          h1{
+            color: wheat;
+            text-decoration: wavy;
+          }
+          h3{
+            color: aquamarine;
+          }
+          a{
+            margin-right: 100px;
+            margin-left: 30px;
+          }
+        </style>
+        
+
+    </head>
+    <body background="contactbg (2).jpeg" style="background-repeat: no-repeat;background-size: cover;">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light"bac>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <header style="background-color: transparent;">
+
+          <div class="header-1">
+              <div id="menu-bar" class="fas fa-bars"></div>
+              <nav class="navbar">
+                  
+                  <a href="home2.html" class="btn btn-info" role="button" style="border: burlywood;">Home</a>
+                  <a href="Product2veg.html" class="btn btn-info" role="button" style="border: burlywood;">Products</a>
+                  <a href="login.html" class="btn btn-info" role="button" style="border:  burlywood;">Login</a>
+                  <a href="Registration.html" class="btn btn-info" role="button" style="border: burlywood;">Registration</a>
+                  <a href="Cart.html" class="btn btn-info" role="button" style="border: burlywood;">Cart</a>    
+                  <a href="contact.html" class="btn btn-info" role="button" style="border: burlywood;">Contact Us</a>
+              </nav>    
+          </div>
+      
+      </header>
+      </nav>
+      
+      <h1>Contact us</h1>
+      <form name="myForm" class="row g-3" onsubmit="return validateForm()" method="post" action="ContactSuccess.html">
+            
+      <div class="container">
+          
+            <div class="col-md-4">
+              <label for="validationServer01" class="form-label">Full Name:</label>
+              <input type="text" class="form-control"  id="fname" name="fname" placeholder="Enter full name" required>
+              
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="col-md-4">
+              <label for="validationServer03" class="form-label">Email:</label>
+              <input type="email" name="email" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required placeholder="Enter email">
+              
+            </div>
+           <br>
+           <br>
+           <br>
+            <div class="col-md-4">
+              <label for="validationServer03" class="form-label">Mobile number:</label>
+              <input type="number" name="mn" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required placeholder="Enter mobile number">
+              
+            </div>
+            <br>
+           <br>
+           <br>
+           <br>
+            <div class="col-md-4">
+              <label for="validationServer03" class="form-label">Message:</label>
+              <textarea class="form-control"rows="4" cols="25" value="Message" placeholder="Enter Message"></textarea>
+              
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="col-12">
+              <button class="btn btn-primary" value="submit">Send</button>
+            </div>
+      </div>
+      </form>
+  
+
+          <div class="container">
+               <div class="col-sm-4">
+                  <h3><b>ADDRESS</b></h3>
+                  <p>Arunodhaya Colony,Madhapur </p>
+                  <p>Hyderabad, 500 081</p>
+                    <p>Telangana & AndhraPradesh</p>
+
+                </div>
+                <div class="col-sm-4">
+                    <h3>Mobile</h3>
+                    <p><a href="+91 83670 02316">+91 1234567890 </a></p>
+                    <p><a href="+91 83670 02316">+91 9876543210 </a></p>
+                  </div>
+                  <div class="col-sm-4">
+                    <h3><strong>E-Mail</strong></h3>
+                    <p><a href="email.com">heavydrinkers@comm.in</a></p>
+  
+                  </div>
+        </div>
+
+
+    </body>
+</html>
